@@ -1,0 +1,62 @@
+.backgraund-color-green {
+  width: 1200px;
+  height: 1228px;
+  background-color: #84A178;
+}
+
+.gallery {
+  background-size: cover;
+  width: 1200px;
+  height: 1015px;
+  background-image: url(../images/backgraund/desktop/ice-cream-desktop.png);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.img-ice-cream {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1012px;
+  height: 422px;
+}
+
+.img-is {
+  object-fit: cover;
+  background: url(brooke-lark-8beTH4VkhLI-unsplash.jpg);
+  border-radius: 24px;
+  margin-top: -90px;
+  z-index: 10000;
+}/*# sourceMappingURL=main.css.map */
