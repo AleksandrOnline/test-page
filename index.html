@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <section class="section-top backgraund-color-green">
+    <section class="section-top backgraund-color-green container">
         <div class="container">
 <p>hi
 </p>
@@ -24,24 +24,49 @@
 
 
 <!-- main-block -->
-    <section class="gallery">
-        <p class="hidden" >gallery</p>
-        
-        <div class="container">
-            
-            <div class="img-ice-cream">
-                <img class="img-is" src="./images/img/desktop/ic-desktop.jpg" alt="foto ice img-ice-cream">
+<section class="gallery">
+    <div class="container gallery__block-img">
+        <div class="gallery__img-ice-cream"">
+
+            <picture class="picture__gallery">
+                <source 
+                srcset="./images/gallery/img/desktop/ic-desktop.webp 1x, ./images/gallery/img/desktop/ic-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)" 
+                type="image/webp">
 
 
-            </div>
+                <source 
+                srcset="./images/gallery/img/tablet/ic-tablet.webp 1x, ./images/gallery/img/tablet/ic-tablet@2x.webp 2x" 
+                media="(min-width: 768px)" 
+                type="image/webp">
 
-            <div class="coments">
 
-            </div>
+                <source 
+                srcset="./images/gallery/img/mobile/ic-mobile.webp 1x, ./images/gallery/img/mobile/ic-mobile@2x.webp 2x" 
+                media="(max-width:767px)" 
+                type="image/webp">
 
+
+                <source 
+                srcset="./images/gallery/img/desktop/ic-desktop.jpg 1x, ./images/gallery/img/desktop/ic-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)">
+
+
+                <source 
+                srcset="./images/gallery/img/tablet/ic-tablet.jpg 1x, ./images/gallery/img/tablet/ic-tablet@2x.jpg 2x" 
+                media="(min-width:768px)">
+
+
+                <source 
+                srcset="./images/gallery/img/mobile/ic-mobile.jpg 1x, ./images/gallery/img/mobile/ic-mobile@2x.jpg 2x" 
+                media="(max-width:767px)">
+
+                <img src="./images/gallery/img/desktop/ic-desktop.jpg" alt="foto-ice-cream" class="gallery__img">
+
+            </picture>
         </div>
-
-    </section>
+    </div>
+</section>
 
 <!-- bottom-bock -->
 
@@ -49,8 +74,14 @@
 
 
 
-    <section class="section-bottom backgraund-color-green">
+    <section class="section-bottom backgraund-color-green container">
         <div class="container"></div>
     </section>
 </body>
 </html>
+
+
+
+
+
+
